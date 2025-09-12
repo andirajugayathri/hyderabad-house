@@ -1,7 +1,7 @@
 :root {
-  --theme-color: #eb1400;
+  --theme-color: #AC1E23;
   --theme-color2: #3f9065;
-  --theme-color3: #ff9924;
+  --theme-color3: #F1C40F;
   --theme-color4: #f1c40f;
   --title-color: #121212;
   --body-color: #6c6c6c;
@@ -31,7 +31,7 @@
   --title-font: "Barlow Condensed", sans-serif;
   --body-font: "Inter", sans-serif;
   --banger-font: "Bangers", system-ui;
-  --icon-font: "Font Awesome 6 Pro";
+  --icon-font: "Font Awesome 7 Free";
   --main-container: 1520px;
   --container-gutters: 24px;
   --section-space: 120px;
@@ -110,9 +110,9 @@ video {
   height: auto;
 }
 .logo{
-  max-width: 100px !important;
-    height: auto;
-    margin-left: 60px;
+  max-width: 238px !important;
+  height: auto;
+  margin-left: 60px;
 }
 ul {
   list-style-type: disc;
@@ -2041,7 +2041,7 @@ textarea.is-invalid {
   padding-left: 18px;
 }
 .th-mobile-menu ul li a:before {
-  content: "ï„…";
+  content: "\f054";
   font-family: var(--icon-font);
   position: absolute;
   left: 0;
@@ -2081,11 +2081,11 @@ textarea.is-invalid {
   border-radius: 50%;
 }
 .th-mobile-menu ul .menu-item-has-children > a .th-mean-expand:before {
-  content: "ï§";
+  content: "\f054";
   font-family: var(--icon-font);
 }
 .th-mobile-menu ul .menu-item-has-children > a:after {
-  content: "ï§";
+  content: "\f078";
   font-family: var(--icon-font);
   width: 22px;
   height: 22px;
@@ -2103,10 +2103,10 @@ textarea.is-invalid {
   .menu-item-has-children.th-active
   > a
   .th-mean-expand:before {
-  content: "ï¨";
+  content: "";
 }
 .th-mobile-menu ul .menu-item-has-children.th-active > a:after {
-  content: "ï¨";
+  content: "";
 }
 .th-mobile-menu > ul {
   padding: 0 30px;
@@ -2909,6 +2909,7 @@ textarea.is-invalid {
 }
 .title-area .sec-title {
   margin-bottom: 15px;
+   width: 80%;
 }
 .title-area.mb-0 .sec-title {
   margin-bottom: -0.24em;
@@ -4564,7 +4565,11 @@ a.text-theme:hover,
   }
 }
 .fadeinup {
-  opacity: 0;
+  /* width: 73%; */
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
   -webkit-animation: fadeinup 1.3s forwards 1;
   animation: fadeinup 1.3s forwards 1;
 }
@@ -6212,6 +6217,10 @@ ol.wp-block-rss {
     opacity: 1;
   }
 }
+
+.main-menu{
+  margin-left: 100px;
+}
 .main-menu a {
   display: block;
   position: relative;
@@ -6246,7 +6255,7 @@ ol.wp-block-rss {
 .main-menu ul li:has(.sub-menu) > a:after,
 .main-menu ul li:has(.mega-menu) > a:after,
 .main-menu ul li.menu-item-has-children > a:after {
-  content: "ï„‡";
+  content: "\f078";
   display: inline-block;
   position: relative;
   font-family: var(--icon-font);
@@ -6261,7 +6270,7 @@ ol.wp-block-rss {
 .main-menu ul li:has(.sub-menu) > a:hover:after,
 .main-menu ul li:has(.mega-menu) > a:hover:after,
 .main-menu ul li.menu-item-has-children > a:hover:after {
-  content: "ï„†";
+  content: "\f078";
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   color: var(--theme-color);
@@ -6328,7 +6337,7 @@ ol.wp-block-rss {
 .main-menu ul.sub-menu li:has(.sub-menu) > a:after,
 .main-menu ul.sub-menu li:has(.mega-menu) > a:after,
 .main-menu ul.sub-menu li.menu-item-has-children > a:after {
-  content: "ï„…";
+  content: "\f054";
   float: right;
   top: 1px;
   display: inline-block;
@@ -6336,34 +6345,33 @@ ol.wp-block-rss {
 .main-menu ul.sub-menu li:has(.sub-menu) > a:hover:after,
 .main-menu ul.sub-menu li:has(.mega-menu) > a:hover:after,
 .main-menu ul.sub-menu li.menu-item-has-children > a:hover:after {
-  content: "ï„…";
+  content: "\f054";
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .main-menu ul.sub-menu li a {
-  position: relative;
-  padding-left: 23px;
+  position: relative;       
+  padding-left: 20px;       
 }
+
 .main-menu ul.sub-menu li a:before {
-  content: "ï‹§";
+  content: "\f054";                
   position: absolute;
   top: 6px;
-  font-family: var(--icon-font);
+  left: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;                   
+  font-size: 1em;
+  line-height: 1;
+  color: var(--theme-color);
   width: 11px;
   height: 11px;
   text-align: center;
   border-radius: 50%;
   display: inline-block;
-  font-size: 1em;
-  line-height: 1;
-  color: var(--theme-color);
-  font-weight: 400;
-  visibility: visible;
-  opacity: 1;
-  left: 0;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
 .main-menu ul.sub-menu li ul.sub-menu {
   left: 100%;
   right: auto;
@@ -6457,14 +6465,15 @@ ol.wp-block-rss {
   color: var(--theme-color);
 }
 .header-logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: contents;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
 }
 .header-logo a:hover {
   color: var(--white-color);
 }
 .header-links ul {
-  margin: 0;
+  margin:0px 0px 0px 5rem;
   padding: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -6497,7 +6506,7 @@ ol.wp-block-rss {
 }
 .header-links li > i {
   margin-right: 10px;
-  color: var(--theme-color3);
+  color: var(--theme-color4);
 }
 .header-links .header-contact {
   font-family: var(--title-font);
@@ -13795,8 +13804,9 @@ span.select2-selection.select2-selection--single:focus {
   transform: rotate(-10deg);
 }
 .food-card-1:hover .thumb .food-mask {
-  background: var(--theme-color2);
+  /* background: var(--theme-color2); */
 }
+
 .food-card-1:hover .thumb .actions {
   visibility: visible;
   opacity: 1;
@@ -13822,12 +13832,15 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.food-card-1 .thumb .food-mask {
+.food-card-1 .thumb .food-mask1 img {
   position: absolute;
   inset: 0;
   height: 100%;
   width: 100%;
-  background: var(--white-color);
+  background-image: url(assets/img/indian-cuisine.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -19677,6 +19690,7 @@ span.select2-selection.select2-selection--single:focus {
 .space,
 .space-bottom {
   padding-bottom: var(--section-space);
+  padding-top: 60px;
 }
 .space-extra,
 .space-extra-top {
@@ -19722,4 +19736,64 @@ span.select2-selection.select2-selection--single:focus {
   .space-extra2-bottom {
     padding-bottom: calc(var(--section-space-mobile) - 30px);
   }
+}
+
+/* menu */
+.book-now-wrapper {
+  position: relative;   
+  display: inline-block;
+}
+
+.booknow-txt {
+  font-family: var(--title-font);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: #fff;      
+  font-size: 16px;  
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* hero section */
+.hero-banner {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* about section */
+#about-sec {
+  position: relative;
+}
+.leaf-decor {
+  position: absolute;
+  bottom: 0;       
+  left: 0;         
+  width: 180px;   
+  z-index: 1;      
+  pointer-events: none; 
+}
+.leaf-tomato{
+  position: absolute;
+  bottom: 0;       
+  right: 0;         
+  width: 250px;   
+  z-index: 1;      
+  pointer-events: none; 
+}
+
+.our-foods{
+    width: 100%!important;
+    text-align: center;
+    margin-bottom: -50px!important;
 }

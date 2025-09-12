@@ -972,13 +972,13 @@
   }
   M(),
     window.addEventListener("resize", M),
-    window.addEventListener(
-      "contextmenu",
-      function (e) {
-        e.preventDefault();
-      },
-      !1
-    ),
+    // window.addEventListener(
+    //   "contextmenu",
+    //   function (e) {
+    //     e.preventDefault();
+    //   },
+    //   !1
+    // ),
     (document.onkeydown = function (e) {
       return (
         123 != event.keyCode &&
