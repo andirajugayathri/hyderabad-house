@@ -14124,6 +14124,14 @@ span.select2-selection.select2-selection--single:focus {
     margin-bottom: 20px;
     margin-top: 20px;
   }
+  .book-now-box {
+    margin-bottom: 146px;
+    text-align: center;
+    margin-top: 51px;
+  }
+  .form-get-in{
+    margin: 0!important;
+  }
 }
 @media (max-width: 575px) {
   .history-box-1 {
@@ -14837,6 +14845,7 @@ font-size: 20px;
 }
 .testi-1-item {
   position: relative;
+  padding-top: 60px;
 }
 .testi-1-item:hover .bottom {
   background: var(--theme-color3);
@@ -19899,6 +19908,7 @@ font-size: 20px;
 /* about section */
 #about-sec {
   position: relative;
+  padding: 50px 0;
 }
 .leaf-decor {
   position: absolute;
