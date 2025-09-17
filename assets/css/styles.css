@@ -1233,6 +1233,8 @@ ul.wp-block-rss a {
    .why-choose{
     padding-left: 1rem!important;
   }
+  .hero-banner {
+    height: 40vh!important;}
 }
 select,
 .form-control,
@@ -15983,8 +15985,8 @@ font-size: 20px;
   background: var(--theme-color);
 }
 .why-feature-list .why-feature-list-wrap:hover .icon img {
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  /* -webkit-filter: invert(1);
+  filter: invert(1); */
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -19908,7 +19910,7 @@ font-size: 20px;
 
 /* hero section */
 .hero-banner {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   overflow: hidden;
 }
