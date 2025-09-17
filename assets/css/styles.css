@@ -14132,6 +14132,12 @@ span.select2-selection.select2-selection--single:focus {
   .form-get-in{
     margin: 0!important;
   }
+  .coming-left img {
+    height: 423px!important;
+  }
+  .coming-right img {
+    height: 423px!important;
+  }
 }
 @media (max-width: 575px) {
   .history-box-1 {
@@ -14143,6 +14149,15 @@ span.select2-selection.select2-selection--single:focus {
   .history-box-1 .content {
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  .coming-left img {
+    height: 423px!important;
+  }
+  .coming-right img {
+    height: 423px!important;
+  }
+  .gy-40 {
+    --bs-gutter-y: 0px;
   }
 }
 @media (max-width: 425px) {
